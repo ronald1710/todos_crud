@@ -12,7 +12,7 @@ const db = new Sequelize({
     username: process.env.DB_USERNAME, //username de render
     password:process.env.DB_PASSWORD, //password de render
     dialect: "postgres",
-    // dialectOptions:{ ssl: { require: true, rejectUnauthorized: false }}
+    dialectOptions:{ ssl: { require: true, rejectUnauthorized: false }}
 });
 
 //export default 

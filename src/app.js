@@ -23,7 +23,6 @@ app.get("/", (req, res) => {
   res.send("servidor arriba");
 });
 
-
  app.get('/v1/todos', async (req, res)=>{
      try{
          const todos = await Todos.findAll();
